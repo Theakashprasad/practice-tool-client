@@ -143,7 +143,7 @@ const ServiceTypeView = () => {
                     {/* General Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaTag /></div>
+                            <div className="text-primary">{FaTag as unknown as JSX.Element}</div>
                             Name
                         </span>
                         <input
@@ -158,7 +158,7 @@ const ServiceTypeView = () => {
 
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaInfoCircle /></div>
+                            <div className="text-blue-500">{FaInfoCircle as unknown as JSX.Element }</div>
                             Comments
                         </span>
                         <textarea
@@ -174,7 +174,7 @@ const ServiceTypeView = () => {
                     {/* Meta Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element }</div>
                             Created At
                         </span>
                         <div className={valueClass}>
@@ -183,7 +183,7 @@ const ServiceTypeView = () => {
                     </div>
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element }</div>
                             Updated At
                         </span>
                         <div className={valueClass}>

@@ -187,14 +187,14 @@ const ClientGroupView = () => {
                     {/* General Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaUser /></div>
+                            <div className="text-primary">{FaUser as unknown as JSX.Element}</div>
                             Name
                         </span>
                         <input name="name" className="form-input mt-1 w-full" value={clientGroup.name || ''} onChange={handleChange} required />
                     </div>
                     <div>
                         <span className={labelClass}>
-                            <div className="text-green-600"><FaBuilding /></div>
+                            <div className="text-green-600">{FaBuilding as unknown as JSX.Element}</div>
                             Practice
                         </span>
                         <div className={valueClass}>{practiceName || 'Not assigned'}</div>
@@ -205,14 +205,14 @@ const ClientGroupView = () => {
                     {/* Meta Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element }</div>
                             Created At
                         </span>
                         <div className={valueClass}>{new Date(clientGroup.createdAt).toLocaleString()}</div>
                     </div>
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element }</div>
                             Updated At
                         </span>
                         <div className={valueClass}>{new Date(clientGroup.updatedAt).toLocaleString()}</div>
@@ -226,7 +226,7 @@ const ClientGroupView = () => {
             {/* Associated Entities Section */}
             <div className={sectionClass + ' p-0'}>
                 <div className="flex items-center gap-2 px-6 pt-6 pb-2 border-b border-gray-100 dark:border-gray-800">
-                    <div className="text-primary text-xl"><FaUsers /></div>
+                    <div className="text-primary text-xl">{FaUsers as unknown as JSX.Element}</div>
                     <h3 className="text-xl font-semibold text-primary">Associated Entities</h3>
                 </div>
                 {associatedEntities.length > 0 ? (
@@ -263,7 +263,7 @@ const ClientGroupView = () => {
             {/* Associated Contacts Section */}
             <div className={sectionClass + ' p-0'}>
                 <div className="flex items-center gap-2 px-6 pt-6 pb-2 border-b border-gray-100 dark:border-gray-800">
-                    <div className="text-primary text-xl"><FaAddressBook /></div>
+                    <div className="text-primary text-xl">{FaAddressBook as unknown as JSX.Element}</div>
                     <h3 className="text-xl font-semibold text-primary">Associated Contacts</h3>
                 </div>
                 {associatedContacts.length > 0 ? (

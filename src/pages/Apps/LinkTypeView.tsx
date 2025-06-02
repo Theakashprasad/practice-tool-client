@@ -148,7 +148,7 @@ const LinkTypeView = () => {
                     {/* General Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaLink /></div>
+                            <div className="text-primary">{FaLink as unknown as JSX.Element}</div>
                             Entity
                         </span>
                         <input
@@ -163,7 +163,7 @@ const LinkTypeView = () => {
 
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaLink /></div>
+                            <div className="text-primary">{FaLink as unknown as JSX.Element }</div>
                             Link Type
                         </span>
                         <input
@@ -178,7 +178,7 @@ const LinkTypeView = () => {
 
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaLink /></div>
+                            <div className="text-primary">{FaLink as unknown as JSX.Element }</div>
                             URL
                         </span>
                         <input
@@ -193,7 +193,7 @@ const LinkTypeView = () => {
 
                     <div>
                         <span className={labelClass}>
-                            <div className="text-primary"><FaEye /></div>
+                            <div className="text-primary">{FaEye as unknown as JSX.Element}</div>
                             Show To Client
                         </span>
                         <input
@@ -210,7 +210,7 @@ const LinkTypeView = () => {
                     {/* Meta Info */}
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element }</div>
                             Created At
                         </span>
                         <div className={valueClass}>
@@ -219,7 +219,7 @@ const LinkTypeView = () => {
                     </div>
                     <div>
                         <span className={labelClass}>
-                            <div className="text-blue-500"><FaCalendarAlt /></div>
+                            <div className="text-blue-500">{FaCalendarAlt as unknown as JSX.Element}</div>
                             Updated At
                         </span>
                         <div className={valueClass}>

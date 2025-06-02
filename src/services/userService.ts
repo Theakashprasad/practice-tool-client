@@ -65,7 +65,7 @@ export const userService = {
         }
     },
 
-    getUserById: async (id: string): Promise<User> => {
+    getUserById: async (id: number): Promise<User> => {
         const response = await axios.get<BackendUser>(API_ENDPOINTS.USERS.BY_ID(id));
         return mapBackendToFrontend(response.data);
     },
@@ -81,7 +81,7 @@ export const userService = {
         return mapBackendToFrontend(response.data);
     },
 
-    updateUser: async (id: string, user: Partial<User>): Promise<User> => {
+    updateUser: async (id: number, user: Partial<User>): Promise<User> => {
         const backendUser = mapFrontendToBackend(user);
         console.log('Updating user with data:', backendUser);
         console.log("update user id", id);
