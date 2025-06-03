@@ -1,9 +1,9 @@
 // API Base URL configuration
 const getBaseUrl = () => {
     if (process.env.NODE_ENV === 'production') {
-        return 'http://localhost:3000';
+        return 'http://69.62.83.80:3000';
     }
-    return 'http://localhost:3000';
+    return 'http://69.62.83.80:3000';
 };
 
 export const API_BASE_URL = getBaseUrl();
