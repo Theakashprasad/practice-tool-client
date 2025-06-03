@@ -1,9 +1,9 @@
 // API Base URL configuration
 const getBaseUrl = () => {
     if (process.env.NODE_ENV === 'production') {
-        return 'https://33ea-2a02-4780-12-abd7-00-1.ngrok-free.app';
+        return 'https://686c-2a02-4780-12-abd7-00-1.ngrok-free.app';
     }
-    return 'https://33ea-2a02-4780-12-abd7-00-1.ngrok-free.app';
+    return 'https://686c-2a02-4780-12-abd7-00-1.ngrok-free.app';
 };
 
 export const API_BASE_URL = getBaseUrl();
